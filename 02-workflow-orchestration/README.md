@@ -55,7 +55,7 @@ tasks:
     header: true
     table: "{{ inputs.taxi ~ '_tripdata' }}"
     from: "{{ outputs.decompress_file.uri }}"
-'''
+```
 
 ## ✅ Soluciones al Quiz
 
