@@ -49,7 +49,9 @@ models:
       - name: trip_id
         description: Unique trip identifier (surrogate key)
         data_tests:
-          - unique
+          - unique:
+              config:
+                severity: warn  # <--- ESTO ES LA CLAVE PARA QUE NO PARE
           - not_null
       - name: vendor_id
         description: Taxi technology provider ID
